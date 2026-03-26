@@ -1,9 +1,11 @@
-"use client";
+﻿"use client";
 
 import { FormEvent, useState } from "react";
 
 export function ContactForm() {
-  const [status, setStatus] = useState("Форма подготовит письмо в вашем почтовом клиенте.");
+  const [status, setStatus] = useState(
+    "Форма подготовит письмо в вашем почтовом клиенте."
+  );
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -13,7 +15,9 @@ export function ContactForm() {
     const contact = String(form.get("contact") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
 
-    const subject = encodeURIComponent(`Сообщение с портфолио от ${name || "посетителя"}`);
+    const subject = encodeURIComponent(
+      `Сообщение с портфолио от ${name || "посетителя"}`
+    );
     const body = encodeURIComponent(
       `Имя: ${name || "Не указано"}\nКонтакт: ${contact || "Не указан"}\n\nСообщение:\n${message || "Без текста"}`
     );

@@ -15,16 +15,16 @@ const skills = [
 
 const experience = [
   {
-    period: "2024 - РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ",
+    period: "2024 - настоящее время",
     title: "Frontend Developer",
     description:
-      "РЎРѕР·РґР°СЋ РёРЅС‚РµСЂС„РµР№СЃС‹, РєРѕС‚РѕСЂС‹Рµ РІС‹РіР»СЏРґСЏС‚ СѓРІРµСЂРµРЅРЅРѕ, Р±С‹СЃС‚СЂРѕ Р·Р°РіСЂСѓР¶Р°СЋС‚СЃСЏ Рё РЅРµ С‚РµСЂСЏСЋС‚СЃСЏ РЅР° РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІР°С…."
+      "Создаю интерфейсы, которые выглядят уверенно, быстро загружаются и не теряются на мобильных устройствах."
   },
   {
     period: "2023 - 2024",
-    title: "РЈС‡РµР±РЅС‹Рµ Рё РєРѕРјРјРµСЂС‡РµСЃРєРёРµ pet-РїСЂРѕРµРєС‚С‹",
+    title: "Учебные и коммерческие pet-проекты",
     description:
-      "РџСЂРѕСЂР°Р±Р°С‚С‹РІР°Р» Р°СЂС…РёС‚РµРєС‚СѓСЂСѓ РєР»РёРµРЅС‚СЃРєРёС… РїСЂРёР»РѕР¶РµРЅРёР№, РїРѕРґРєР»СЋС‡Р°Р» API, РЅР°СЃС‚СЂР°РёРІР°Р» РґРµРїР»РѕР№ Рё СѓР»СѓС‡С€Р°Р» UX."
+      "Прорабатывал архитектуру клиентских приложений, подключал API, настраивал деплой и улучшал UX."
   }
 ];
 
@@ -33,7 +33,7 @@ const projects = [
     title: "StudyFlow",
     stack: "Next.js, TypeScript, CSS Modules",
     description:
-      "РџР»Р°С‚С„РѕСЂРјР° РґР»СЏ РїР»Р°РЅРёСЂРѕРІР°РЅРёСЏ СѓС‡РµР±РЅРѕР№ РЅР°РіСЂСѓР·РєРё СЃ Р°РґР°РїС‚РёРІРЅС‹Рј РёРЅС‚РµСЂС„РµР№СЃРѕРј, С„РёР»СЊС‚СЂР°РјРё Рё РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹РјРё СЃС†РµРЅР°СЂРёСЏРјРё.",
+      "Платформа для планирования учебной нагрузки с адаптивным интерфейсом, фильтрами и персональными сценариями.",
     demo: "https://example.com/studyflow",
     code: "https://github.com/snanelx/studyflow"
   },
@@ -41,7 +41,7 @@ const projects = [
     title: "Cinema Scope",
     stack: "React, REST API, Chart UI",
     description:
-      "РЎРµСЂРІРёСЃ РґР»СЏ РІРёР·СѓР°Р»РёР·Р°С†РёРё СЂРµР№С‚РёРЅРіРѕРІ Рё РїРѕРґР±РѕСЂРѕРє С„РёР»СЊРјРѕРІ СЃ СѓРїРѕСЂРѕРј РЅР° Р±С‹СЃС‚СЂС‹Р№ РїРѕРёСЃРє Рё С‡РёСЃС‚СѓСЋ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅСѓСЋ Р°СЂС…РёС‚РµРєС‚СѓСЂСѓ.",
+      "Сервис для визуализации рейтингов и подборок фильмов с упором на быстрый поиск и чистую информационную архитектуру.",
     demo: "https://example.com/cinema-scope",
     code: "https://github.com/snanelx/cinema-scope"
   },
@@ -49,18 +49,38 @@ const projects = [
     title: "Sound Atlas",
     stack: "Next.js, Static Export, SEO",
     description:
-      "Р›РµРЅРґРёРЅРі-РїРѕСЂС‚Р°Р» РґР»СЏ РјСѓР·С‹РєР°Р»СЊРЅРѕРіРѕ РїСЂРѕРµРєС‚Р° СЃ РѕРїС‚РёРјРёР·РёСЂРѕРІР°РЅРЅРѕР№ Р·Р°РіСЂСѓР·РєРѕР№, СЃРµРјР°РЅС‚РёС‡РµСЃРєРѕР№ СЂР°Р·РјРµС‚РєРѕР№ Рё РєРѕРЅС‚РµРЅС‚РЅС‹РјРё Р±Р»РѕРєР°РјРё.",
+      "Лендинг-портал для музыкального проекта с оптимизированной загрузкой, семантической разметкой и контентными блоками.",
     demo: "https://example.com/sound-atlas",
     code: "https://github.com/snanelx/sound-atlas"
   }
 ];
 
 const contacts = [
-  { label: "Email", value: "nekiforov.dev@example.com", href: "mailto:nekiforov.dev@example.com" },
-  { label: "Telegram", value: "@nekiforov_dev", href: "https://t.me/nekiforov_dev" },
-  { label: "GitHub", value: "github.com/snanelx", href: "https://github.com/snanelx" },
-  { label: "VK", value: "vk.com/your-profile", href: "https://vk.com/your-profile" },
-  { label: "MAX", value: "@nekiforov", href: "https://max.ru/" }
+  {
+    label: "Email",
+    value: "nekiforov.dev@example.com",
+    href: "mailto:nekiforov.dev@example.com"
+  },
+  {
+    label: "Telegram",
+    value: "@nekiforov_dev",
+    href: "https://t.me/nekiforov_dev"
+  },
+  {
+    label: "GitHub",
+    value: "github.com/snanelx",
+    href: "https://github.com/snanelx"
+  },
+  {
+    label: "VK",
+    value: "vk.com/your-profile",
+    href: "https://vk.com/your-profile"
+  },
+  {
+    label: "MAX",
+    value: "@nekiforov",
+    href: "https://max.ru/"
+  }
 ];
 
 export default function HomePage() {
@@ -75,48 +95,48 @@ export default function HomePage() {
             N.
           </a>
           <div className="nav-links">
-            <a href="#about">РћР±Рѕ РјРЅРµ</a>
-            <a href="#projects">РџСЂРѕРµРєС‚С‹</a>
-            <a href="#contacts">РљРѕРЅС‚Р°РєС‚С‹</a>
+            <a href="#about">Обо мне</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
           </div>
         </nav>
 
         <section className="hero-panel">
           <div className="hero-copy">
-            <span className="eyebrow">РџРѕСЂС‚С„РѕР»РёРѕ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєР°</span>
-            <h1>РЎРѕР·РґР°СЋ Р±С‹СЃС‚СЂС‹Рµ, РІС‹СЂР°Р·РёС‚РµР»СЊРЅС‹Рµ Рё РїРѕРЅСЏС‚РЅС‹Рµ РІРµР±-РёРЅС‚РµСЂС„РµР№СЃС‹.</h1>
+            <span className="eyebrow">Портфолио разработчика</span>
+            <h1>Создаю быстрые, выразительные и понятные веб-интерфейсы.</h1>
             <p className="hero-text">
-              Р­С‚Рѕ РїРµСЂСЃРѕРЅР°Р»СЊРЅР°СЏ РІРёР·РёС‚РЅР°СЏ РєР°СЂС‚РѕС‡РєР° СЃ Р°РєС†РµРЅС‚РѕРј РЅР° РїСЂРѕРґСѓРјР°РЅРЅС‹Р№
-              РґРёР·Р°Р№РЅ, РёРЅР¶РµРЅРµСЂРЅСѓСЋ Р°РєРєСѓСЂР°С‚РЅРѕСЃС‚СЊ Рё СѓРґРѕР±РЅСѓСЋ РєРѕРјРјСѓРЅРёРєР°С†РёСЋ.
+              Это персональная визитная карточка с акцентом на продуманный
+              дизайн, инженерную аккуратность и удобную коммуникацию.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">
-                РЎРјРѕС‚СЂРµС‚СЊ РїСЂРѕРµРєС‚С‹
+                Смотреть проекты
               </a>
               <a className="button button-secondary" href="#contacts">
-                РЎРІСЏР·Р°С‚СЊСЃСЏ
+                Связаться
               </a>
             </div>
           </div>
 
-          <aside className="hero-card" aria-label="РљСЂР°С‚РєР°СЏ СЃРІРѕРґРєР°">
+          <aside className="hero-card" aria-label="Краткая сводка">
             <p>Frontend / Next.js / UI Engineering</p>
             <dl className="summary-grid">
               <div>
                 <dt>3+</dt>
-                <dd>РєР»СЋС‡РµРІС‹С… РїСЂРѕРµРєС‚Р° РІ РїРѕСЂС‚С„РѕР»РёРѕ</dd>
+                <dd>ключевых проекта в портфолио</dd>
               </div>
               <div>
                 <dt>100%</dt>
-                <dd>Р°РґР°РїС‚РёРІРЅР°СЏ РІС‘СЂСЃС‚РєР°</dd>
+                <dd>адаптивная вёрстка</dd>
               </div>
               <div>
                 <dt>SEO</dt>
-                <dd>РјРµС‚Р°РґР°РЅРЅС‹Рµ Рё СЃРµРјР°РЅС‚РёРєР°</dd>
+                <dd>метаданные и семантика</dd>
               </div>
               <div>
                 <dt>GitHub</dt>
-                <dd>РіРѕС‚РѕРІРЅРѕСЃС‚СЊ Рє РїСѓР±Р»РёРєР°С†РёРё</dd>
+                <dd>готовность к публикации</dd>
               </div>
             </dl>
           </aside>
@@ -125,24 +145,28 @@ export default function HomePage() {
 
       <section className="section two-column" id="about">
         <div>
-          <span className="section-label">РћР±Рѕ РјРЅРµ</span>
-          <h2>Р Р°Р·СЂР°Р±Р°С‚С‹РІР°СЋ РёРЅС‚РµСЂС„РµР№СЃС‹, РєРѕС‚РѕСЂС‹Рµ РїСЂРёСЏС‚РЅРѕ РїРѕРєР°Р·С‹РІР°С‚СЊ СЂР°Р±РѕС‚РѕРґР°С‚РµР»СЋ Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ.</h2>
+          <span className="section-label">Обо мне</span>
+          <h2>
+            Разрабатываю интерфейсы, которые приятно показывать работодателю и
+            пользователю.
+          </h2>
         </div>
         <div className="section-copy">
           <p>
-            РЎРїРµС†РёР°Р»РёР·РёСЂСѓСЋСЃСЊ РЅР° СЃРѕР·РґР°РЅРёРё СЃРѕРІСЂРµРјРµРЅРЅС‹С… РІРµР±-РїСЂРёР»РѕР¶РµРЅРёР№ СЃ РїРѕРЅСЏС‚РЅРѕР№
-            СЃС‚СЂСѓРєС‚СѓСЂРѕР№, РєР°С‡РµСЃС‚РІРµРЅРЅРѕР№ С‚РёРїРѕРіСЂР°С„РёРєРѕР№ Рё РІРЅРёРјР°РЅРёРµРј Рє РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё.
+            Специализируюсь на создании современных веб-приложений с понятной
+            структурой, качественной типографикой и вниманием к
+            производительности.
           </p>
           <p>
-            Р’ СЂР°Р±РѕС‚Рµ С†РµРЅСЋ С‡РёСЃС‚СѓСЋ Р°СЂС…РёС‚РµРєС‚СѓСЂСѓ РєРѕРјРїРѕРЅРµРЅС‚РѕРІ, РґРѕСЃС‚СѓРїРЅРѕСЃС‚СЊ, РїСЂРµРґСЃРєР°Р·СѓРµРјС‹Р№
-            UX Рё Р»С‘РіРєРѕСЃС‚СЊ РґР°Р»СЊРЅРµР№С€РµРіРѕ РјР°СЃС€С‚Р°Р±РёСЂРѕРІР°РЅРёСЏ РїСЂРѕРµРєС‚Р°.
+            В работе ценю чистую архитектуру компонентов, доступность,
+            предсказуемый UX и лёгкость дальнейшего масштабирования проекта.
           </p>
         </div>
       </section>
 
       <section className="section card-grid">
         <article className="info-card">
-          <h3>РќР°РІС‹РєРё</h3>
+          <h3>Навыки</h3>
           <div className="tag-list">
             {skills.map((skill) => (
               <span className="tag" key={skill}>
@@ -153,7 +177,7 @@ export default function HomePage() {
         </article>
 
         <article className="info-card">
-          <h3>РћРїС‹С‚</h3>
+          <h3>Опыт</h3>
           <div className="timeline">
             {experience.map((item) => (
               <div className="timeline-item" key={item.title}>
@@ -169,12 +193,15 @@ export default function HomePage() {
       <section className="section" id="projects">
         <div className="section-heading">
           <div>
-            <span className="section-label">РџСЂРѕРµРєС‚С‹</span>
-            <h2>РџРѕРґР±РѕСЂРєР° СЂР°Р±РѕС‚, РєРѕС‚РѕСЂС‹Рµ РїРѕРєР°Р·С‹РІР°СЋС‚ СЃС‚РµРє, РІРєСѓСЃ Рє РґРµС‚Р°Р»СЏРј Рё Р°РєРєСѓСЂР°С‚РЅРѕСЃС‚СЊ СЂРµР°Р»РёР·Р°С†РёРё.</h2>
+            <span className="section-label">Проекты</span>
+            <h2>
+              Подборка работ, которые показывают стек, вкус к деталям и
+              аккуратность реализации.
+            </h2>
           </div>
           <p>
-            РљР°СЂС‚РѕС‡РєРё Р»РµРіРєРѕ СЂР°СЃС€РёСЂСЏСЋС‚СЃСЏ: С‡С‚РѕР±С‹ РґРѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Р№ РїСЂРѕРµРєС‚, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ
-            РґРѕРїРёСЃР°С‚СЊ РѕР±СЉРµРєС‚ РІ РјР°СЃСЃРёРІ РґР°РЅРЅС‹С….
+            Карточки легко расширяются: чтобы добавить новый проект, достаточно
+            дописать объект в массив данных.
           </p>
         </div>
 
@@ -188,10 +215,10 @@ export default function HomePage() {
               <p>{project.description}</p>
               <div className="project-links">
                 <a href={project.demo} target="_blank" rel="noreferrer">
-                  Р”РµРјРѕ
+                  Демо
                 </a>
                 <a href={project.code} target="_blank" rel="noreferrer">
-                  РљРѕРґ
+                  Код
                 </a>
               </div>
             </article>
@@ -201,11 +228,19 @@ export default function HomePage() {
 
       <section className="section contact-layout" id="contacts">
         <article className="info-card contact-card">
-          <span className="section-label">РљРѕРЅС‚Р°РєС‚С‹</span>
-          <h2>РћС‚РєСЂС‹С‚ Рє РїСЂРµРґР»РѕР¶РµРЅРёСЏРј, СЃРѕС‚СЂСѓРґРЅРёС‡РµСЃС‚РІСѓ Рё РѕР±СЃСѓР¶РґРµРЅРёСЋ РЅРѕРІС‹С… Р·Р°РґР°С‡.</h2>
+          <span className="section-label">Контакты</span>
+          <h2>
+            Открыт к предложениям, сотрудничеству и обсуждению новых задач.
+          </h2>
           <div className="contact-list">
             {contacts.map((contact) => (
-              <a key={contact.label} className="contact-row" href={contact.href} target="_blank" rel="noreferrer">
+              <a
+                key={contact.label}
+                className="contact-row"
+                href={contact.href}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>{contact.label}</span>
                 <strong>{contact.value}</strong>
               </a>
@@ -218,4 +253,3 @@ export default function HomePage() {
     </main>
   );
 }
-
