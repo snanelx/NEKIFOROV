@@ -101,9 +101,9 @@ export default function HomePage() {
         <section className="hero-panel">
           <div className="hero-copy">
             <span className="eyebrow">Портфолио разработчика</span>
-            <h1>Создаю сайты, интерфейсы и цифровые продукты, которые удобно использовать и приятно показывать.</h1>
+            <h1>Делаю сайты и интерфейсы, которые удобны в использовании и радуют глаз.</h1>
             <p className="hero-text">
-              Здесь собраны мои проекты, навыки и контакты. Основной фокус: фронтенд,
+              Здесь собраны мои проекты, навыки и контакты. Основной фокус: фронтенд, бекенд
               адаптивная верстка, логика интерфейсов и работа с реальными задачами.
             </p>
             <div className="hero-actions">
@@ -117,11 +117,11 @@ export default function HomePage() {
           </div>
 
           <aside className="hero-card" aria-label="Краткая сводка">
-            <p>Frontend / JavaScript / UI / Telegram bots</p>
+            <p>Frontend / JavaScript / UI / Telegram bots / Backend</p>
             <dl className="summary-grid">
               <div>
-                <dt>3</dt>
-                <dd>реальных проекта в портфолио</dd>
+                <dt>10+</dt>
+                <dd>реальных проектов в портфолио</dd>
               </div>
               <div>
                 <dt>100%</dt>
