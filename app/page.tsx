@@ -6,80 +6,77 @@ const skills = [
   "TypeScript",
   "JavaScript",
   "HTML5",
-  "CSS3 / SCSS",
-  "Responsive UI",
+  "CSS3",
+  "Адаптивная верстка",
   "SEO",
   "Git / GitHub",
-  "REST API"
+  "REST API",
+  "Telegraf",
+  "MySQL"
 ];
 
 const experience = [
   {
-    period: "2024 - present",
-    title: "Frontend Developer",
+    period: "2024 - настоящее время",
+    title: "Frontend и web developer",
     description:
-      "I build interfaces that feel confident, load fast and stay readable on phones, tablets and desktop screens."
+      "Разрабатываю сайты и интерфейсы с акцентом на чистую верстку, понятный UX и аккуратную структуру проекта."
   },
   {
-    period: "2023 - 2024",
-    title: "Educational and commercial pet projects",
+    period: "Pet и учебные проекты",
+    title: "Практика полного цикла",
     description:
-      "Worked on client-side architecture, API integrations, deployment pipelines and UX improvements."
+      "Делаю лендинги, магазины, Telegram-ботов, подключаю API, работаю с логикой интерфейсов и публикацией проектов."
   }
 ];
 
 const projects = [
   {
-    title: "StudyFlow",
-    stack: "Next.js, TypeScript, CSS Modules",
+    title: "Random Shop",
+    stack: "HTML, CSS, JavaScript",
     description:
-      "A platform for study planning with responsive layouts, filtering and personalized flows.",
-    demo: "https://example.com/studyflow",
-    code: "https://github.com/snanelx/studyflow"
+      "Магазин обуви с каталогом, карточками товаров и акцентом на аккуратную витринную подачу интерфейса.",
+    demo: "https://github.com/snanelx/shoes",
+    code: "https://github.com/snanelx/shoes"
   },
   {
-    title: "Cinema Scope",
-    stack: "React, REST API, Chart UI",
+    title: "Sabirov",
+    stack: "HTML, CSS, JavaScript",
     description:
-      "A movie discovery app focused on fast search, visual ratings and clear information architecture.",
-    demo: "https://example.com/cinema-scope",
-    code: "https://github.com/snanelx/cinema-scope"
+      "Корпоративный сайт для компании Sabirov с презентацией услуг, визуальным стилем бренда и структурированными секциями.",
+    demo: "https://github.com/snanelx/sabirov",
+    code: "https://github.com/snanelx/sabirov"
   },
   {
-    title: "Sound Atlas",
-    stack: "Next.js, Static Export, SEO",
+    title: "RG Shop Bot",
+    stack: "Telegraf, JavaScript, MySQL",
     description:
-      "A landing portal for a music-focused product with optimized loading, semantic markup and content sections.",
-    demo: "https://example.com/sound-atlas",
-    code: "https://github.com/snanelx/sound-atlas"
+      "Telegram-бот маркетплейс для покупки и продажи игровых аккаунтов с модерацией, админ-панелью и серверной логикой.",
+    demo: "https://github.com/snanelx/tg_game-shop",
+    code: "https://github.com/snanelx/tg_game-shop"
   }
 ];
 
 const contacts = [
-  {
-    label: "Email",
-    value: "nekiforov.dev@example.com",
-    href: "mailto:nekiforov.dev@example.com"
-  },
-  {
-    label: "Telegram",
-    value: "@nekiforov_dev",
-    href: "https://t.me/nekiforov_dev"
-  },
   {
     label: "GitHub",
     value: "github.com/snanelx",
     href: "https://github.com/snanelx"
   },
   {
+    label: "Email",
+    value: "lolkekudacha71@gmail.com",
+    href: "mailto:lolkekudacha71@gmail.com"
+  },
+  {
+    label: "Telegram",
+    value: "@snanelx",
+    href: "https://t.me/snanelx"
+  },
+  {
     label: "VK",
     value: "vk.com/your-profile",
     href: "https://vk.com/your-profile"
-  },
-  {
-    label: "MAX",
-    value: "@nekiforov",
-    href: "https://max.ru/"
   }
 ];
 
@@ -95,48 +92,48 @@ export default function HomePage() {
             N.
           </a>
           <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <a href="#about">Обо мне</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
           </div>
         </nav>
 
         <section className="hero-panel">
           <div className="hero-copy">
-            <span className="eyebrow">Developer Portfolio</span>
-            <h1>I build fast, expressive and easy-to-use web interfaces.</h1>
+            <span className="eyebrow">Портфолио разработчика</span>
+            <h1>Создаю сайты, интерфейсы и цифровые продукты, которые удобно использовать и приятно показывать.</h1>
             <p className="hero-text">
-              This personal portfolio is designed to present skills, projects and
-              communication channels in a clear and memorable way.
+              Здесь собраны мои проекты, навыки и контакты. Основной фокус: фронтенд,
+              адаптивная верстка, логика интерфейсов и работа с реальными задачами.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">
-                View projects
+                Смотреть проекты
               </a>
               <a className="button button-secondary" href="#contacts">
-                Contact me
+                Связаться
               </a>
             </div>
           </div>
 
-          <aside className="hero-card" aria-label="Quick summary">
-            <p>Frontend / Next.js / UI Engineering</p>
+          <aside className="hero-card" aria-label="Краткая сводка">
+            <p>Frontend / JavaScript / UI / Telegram bots</p>
             <dl className="summary-grid">
               <div>
-                <dt>3+</dt>
-                <dd>featured portfolio projects</dd>
+                <dt>3</dt>
+                <dd>реальных проекта в портфолио</dd>
               </div>
               <div>
                 <dt>100%</dt>
-                <dd>responsive layouts</dd>
+                <dd>адаптивная подача</dd>
               </div>
               <div>
-                <dt>SEO</dt>
-                <dd>metadata and semantic markup</dd>
+                <dt>UI</dt>
+                <dd>внимание к структуре и дизайну</dd>
               </div>
               <div>
                 <dt>GitHub</dt>
-                <dd>ready for publishing</dd>
+                <dd>открытые репозитории и код</dd>
               </div>
             </dl>
           </aside>
@@ -145,24 +142,24 @@ export default function HomePage() {
 
       <section className="section two-column" id="about">
         <div>
-          <span className="section-label">About me</span>
-          <h2>I create interfaces that are comfortable to show to both employers and users.</h2>
+          <span className="section-label">Обо мне</span>
+          <h2>Разрабатываю проекты от визуальной части до рабочей логики и публикации.</h2>
         </div>
         <div className="section-copy">
           <p>
-            I focus on modern web applications with clear structure, strong typography
-            and careful attention to performance.
+            Мне интересно делать проекты, которые выглядят аккуратно, быстро работают
+            и решают понятную задачу для пользователя.
           </p>
           <p>
-            I value clean component architecture, accessibility, predictable UX and
-            easy long-term scaling.
+            В моем портфолио есть интернет-магазин, корпоративный сайт и Telegram-бот,
+            поэтому я умею работать и с интерфейсами, и с прикладной бизнес-логикой.
           </p>
         </div>
       </section>
 
       <section className="section card-grid">
         <article className="info-card">
-          <h3>Skills</h3>
+          <h3>Навыки</h3>
           <div className="tag-list">
             {skills.map((skill) => (
               <span className="tag" key={skill}>
@@ -173,7 +170,7 @@ export default function HomePage() {
         </article>
 
         <article className="info-card">
-          <h3>Experience</h3>
+          <h3>Опыт</h3>
           <div className="timeline">
             {experience.map((item) => (
               <div className="timeline-item" key={item.title}>
@@ -189,11 +186,11 @@ export default function HomePage() {
       <section className="section" id="projects">
         <div className="section-heading">
           <div>
-            <span className="section-label">Projects</span>
-            <h2>Selected work that highlights my stack, attention to detail and implementation quality.</h2>
+            <span className="section-label">Проекты</span>
+            <h2>Подборка проектов, которые показывают мой стек, подход к верстке и умение собирать рабочий продукт.</h2>
           </div>
           <p>
-            The cards are easy to extend: add one more object to the data array and the new project will appear.
+            Ниже собраны проекты из GitHub: магазин, корпоративный сайт и Telegram-бот с более сложной логикой.
           </p>
         </div>
 
@@ -207,10 +204,10 @@ export default function HomePage() {
               <p>{project.description}</p>
               <div className="project-links">
                 <a href={project.demo} target="_blank" rel="noreferrer">
-                  Demo
+                  Репозиторий
                 </a>
                 <a href={project.code} target="_blank" rel="noreferrer">
-                  Code
+                  Код
                 </a>
               </div>
             </article>
@@ -220,8 +217,8 @@ export default function HomePage() {
 
       <section className="section contact-layout" id="contacts">
         <article className="info-card contact-card">
-          <span className="section-label">Contacts</span>
-          <h2>Open to new opportunities, collaboration and product discussions.</h2>
+          <span className="section-label">Контакты</span>
+          <h2>Открыт к новым задачам, сотрудничеству и интересным проектам.</h2>
           <div className="contact-list">
             {contacts.map((contact) => (
               <a
