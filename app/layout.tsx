@@ -2,28 +2,28 @@
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Никифоров | Портфолио разработчика",
+  title: "Nekiforov | Developer Portfolio",
   description:
-    "Персональное портфолио разработчика: навыки, опыт, проекты и контакты в современном адаптивном формате.",
+    "Personal developer portfolio with projects, skills, experience and contact information.",
   keywords: [
-    "портфолио разработчика",
+    "developer portfolio",
     "Next.js",
     "frontend developer",
     "TypeScript",
-    "веб-разработчик"
+    "web developer"
   ],
   openGraph: {
-    title: "Никифоров | Портфолио разработчика",
+    title: "Nekiforov | Developer Portfolio",
     description:
-      "Интерактивное онлайн-портфолио с проектами, стеком технологий и контактами.",
+      "Interactive online portfolio with projects, technology stack and contact information.",
     type: "website",
-    locale: "ru_RU"
+    locale: "en_US"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Никифоров | Портфолио разработчика",
+    title: "Nekiforov | Developer Portfolio",
     description:
-      "Портфолио разработчика на Next.js с акцентом на качество интерфейсов и инженерную аккуратность."
+      "Developer portfolio built with Next.js and focused on polished interfaces and clean implementation."
   },
   robots: {
     index: true,
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );

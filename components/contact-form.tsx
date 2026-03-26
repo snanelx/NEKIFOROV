@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 
 export function ContactForm() {
   const [status, setStatus] = useState(
-    "Форма подготовит письмо в вашем почтовом клиенте."
+    "The form will prepare an email in your local mail client."
   );
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -16,51 +16,51 @@ export function ContactForm() {
     const message = String(form.get("message") ?? "").trim();
 
     const subject = encodeURIComponent(
-      `Сообщение с портфолио от ${name || "посетителя"}`
+      `Portfolio message from ${name || "visitor"}`
     );
     const body = encodeURIComponent(
-      `Имя: ${name || "Не указано"}\nКонтакт: ${contact || "Не указан"}\n\nСообщение:\n${message || "Без текста"}`
+      `Name: ${name || "Not provided"}\nContact: ${contact || "Not provided"}\n\nMessage:\n${message || "No message"}`
     );
 
     window.location.href = `mailto:nekiforov.dev@example.com?subject=${subject}&body=${body}`;
-    setStatus("Почтовый клиент открыт. Проверьте письмо перед отправкой.");
+    setStatus("Mail client opened. Please review the message before sending.");
   }
 
   return (
     <article className="contact-form">
-      <h3>Форма связи</h3>
+      <h3>Contact form</h3>
       <p>
-        Для статического деплоя на GitHub Pages форма работает без сервера:
-        собирает письмо и открывает ваш email-клиент.
+        For static deployment on GitHub Pages this form works without a server:
+        it builds a message and opens your local mail client.
       </p>
       <form onSubmit={handleSubmit}>
         <div className="field">
-          <label htmlFor="name">Имя</label>
-          <input id="name" name="name" placeholder="Как к вам обращаться" />
+          <label htmlFor="name">Name</label>
+          <input id="name" name="name" placeholder="How should I address you" />
         </div>
 
         <div className="field">
-          <label htmlFor="contact">Контакт</label>
+          <label htmlFor="contact">Contact</label>
           <input
             id="contact"
             name="contact"
-            placeholder="Email, Telegram или другой удобный способ связи"
+            placeholder="Email, Telegram or another preferred contact"
           />
         </div>
 
         <div className="field">
-          <label htmlFor="message">Сообщение</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Кратко расскажите о задаче или предложении"
+            placeholder="Briefly describe the task or your proposal"
             rows={6}
           />
         </div>
 
         <div className="form-actions">
           <button className="button button-primary" type="submit">
-            Подготовить письмо
+            Prepare email
           </button>
           <span className="status" aria-live="polite">
             {status}
