@@ -125,8 +125,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 80px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.64);
@@ -138,6 +137,10 @@ textarea {
     border-color 0.3s ease,
     color 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+.brand img {
+  width: 100%;
 }
 
 .nav-links {

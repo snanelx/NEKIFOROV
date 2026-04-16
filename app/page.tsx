@@ -90,7 +90,7 @@ export default function HomePage() {
       <header className="hero" id="home">
         <nav className="nav">
           <a className="brand" href="#home">
-            N.
+            <img src="https://avatarfiles.alphacoders.com/352/352705.jpg" alt="Logo" />
           </a>
           <div className="nav-side">
             <div className="nav-links">
