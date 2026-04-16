@@ -1,4 +1,5 @@
 ﻿import { ContactForm } from "@/components/contact-form";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const skills = [
   "Next.js",
@@ -70,13 +71,13 @@ const contacts = [
   },
   {
     label: "Telegram",
-    value: "@snanelx",
-    href: "https://t.me/snanelx"
+    value: "@snanelo",
+    href: "https://t.me/snanelo"
   },
   {
     label: "VK",
-    value: "vk.com/your-profile",
-    href: "https://vk.com/your-profile"
+    value: "vk.com/slvaxn",
+    href: "https://vk.com/slvaxn"
   }
 ];
 
@@ -91,10 +92,13 @@ export default function HomePage() {
           <a className="brand" href="#home">
             N.
           </a>
-          <div className="nav-links">
-            <a href="#about">Обо мне</a>
-            <a href="#projects">Проекты</a>
-            <a href="#contacts">Контакты</a>
+          <div className="nav-side">
+            <div className="nav-links">
+              <a href="#about">Обо мне</a>
+              <a href="#projects">Проекты</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+            <ThemeToggle />
           </div>
         </nav>
 
@@ -103,7 +107,7 @@ export default function HomePage() {
             <span className="eyebrow">Портфолио разработчика</span>
             <h1>Делаю сайты и интерфейсы, которые удобны в использовании и радуют глаз.</h1>
             <p className="hero-text">
-              Здесь собраны мои проекты, навыки и контакты. Основной фокус: фронтенд, бекенд
+              Здесь собраны мои проекты, навыки и контакты. Основной фокус: фронтенд, бекенд,
               адаптивная верстка, логика интерфейсов и работа с реальными задачами.
             </p>
             <div className="hero-actions">

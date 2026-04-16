@@ -1,5 +1,15 @@
 ﻿import type { Metadata } from "next";
+import { SitePreloader } from "@/components/site-preloader";
 import "./globals.css";
+
+const themeInitScript = `
+(() => {
+  const storageKey = "site-theme";
+  const savedTheme = window.localStorage.getItem(storageKey);
+  const preferredTheme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = preferredTheme;
+})();
+`;
 
 export const metadata: Metadata = {
   title: "Никифоров | Портфолио разработчика",
@@ -38,7 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <SitePreloader />
+        {children}
+      </body>
     </html>
   );
 }
