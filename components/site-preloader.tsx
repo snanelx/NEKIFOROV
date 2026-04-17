@@ -2,51 +2,31 @@
 
 import { useEffect, useState } from "react";
 
-const LOADED_PROGRESS = 100;
-
 export function SitePreloader() {
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    let progressInterval: ReturnType<typeof setInterval> | null = null;
-    let finishTimeout: ReturnType<typeof setTimeout> | null = null;
+    // Анимация прогресса до 100% за 2 секунды
+    const startTime = Date.now();
+    const duration = 2000; // 2 секунды
 
-    const finishLoading = () => {
-      setProgress(LOADED_PROGRESS);
-      setIsComplete(true);
+    const interval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const newProgress = Math.min((elapsed / duration) * 100, 100);
+      setProgress(Math.floor(newProgress));
 
-      finishTimeout = setTimeout(() => {
-        setIsVisible(false);
-      }, 420);
-    };
-
-    progressInterval = setInterval(() => {
-      setProgress((currentProgress) => {
-       
-
-        const increment = currentProgress < 45 ? 7 : currentProgress < 70 ? 4 : 2;
-        return Math.min(currentProgress + increment, 92);
-      });
-    }, 90);
-
-    if (document.readyState === "complete") {
-      finishLoading();
-    } else {
-      window.addEventListener("load", finishLoading, { once: true });
-    }
+      if (newProgress >= 100) {
+        clearInterval(interval);
+        // Скрываем прелоадер через 300мс после завершения
+        setTimeout(() => {
+          setIsVisible(false);
+        }, 300);
+      }
+    }, 16); // ~60fps для плавности
 
     return () => {
-      if (progressInterval) {
-        clearInterval(progressInterval);
-      }
-
-      if (finishTimeout) {
-        clearTimeout(finishTimeout);
-      }
-
-      window.removeEventListener("load", finishLoading);
+      clearInterval(interval);
     };
   }, []);
 
@@ -55,7 +35,7 @@ export function SitePreloader() {
   }
 
   return (
-    <div className={`preloader ${isComplete ? "is-complete" : ""}`} aria-hidden="true">
+    <div className={`preloader`} aria-hidden="true">
       <div className="preloader-card">
         <div className="preloader-spinner">
           <div className="preloader-ring preloader-ring-outer" />
