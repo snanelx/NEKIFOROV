@@ -84,8 +84,6 @@ const contacts = [
 export default function HomePage() {
   return (
     <main className="page-shell">
-      <div className="background-orbit background-orbit-left" />
-      <div className="background-orbit background-orbit-right" />
 
       <header className="hero" id="home">
         <nav className="nav">
